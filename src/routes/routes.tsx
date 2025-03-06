@@ -3,6 +3,7 @@ import HomePage from '../Screens/Home';
 import { ROUTE_HOME, ROUTE_PRODUCTS } from "../utils/constants";
 import PageNotFound from "../Screens/PageNotFound/PageNotFound";
 import Products from "../Screens/Products";
+import BaseLayout from "../components/BaseLayout";
 
 
 export default function BravuzRoutes() {
@@ -11,7 +12,9 @@ export default function BravuzRoutes() {
         {
             path: ROUTE_HOME.route,
             element: (
-                <HomePage />
+                <BaseLayout >
+                    <HomePage />
+                </BaseLayout>
             )
             ,
             errorElement: (<PageNotFound />),
@@ -19,7 +22,9 @@ export default function BravuzRoutes() {
         {
             path: ROUTE_PRODUCTS.route,
             element: (
-                <Products />
+                <BaseLayout >
+                    <Products />
+                </BaseLayout>
             )
             ,
             errorElement: (<PageNotFound />),

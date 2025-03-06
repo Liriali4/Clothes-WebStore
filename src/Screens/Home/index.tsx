@@ -7,7 +7,6 @@ export default function HomePage(): JSX.Element {
 
     return (
         <Box>
-            <Header />
             <Flex
                 p={'10px 30px'}
                 h={'450px'}
@@ -106,7 +105,6 @@ export default function HomePage(): JSX.Element {
                     Texto aleatório Texto aleatório Texto aleatório Texto aleatório
                 </Text>
             </Box>
-            <Footer />
         </Box>
     );
 }
